@@ -131,6 +131,7 @@ export default function Home() {
               className="rounded-lg"
               layout="fill"
               objectFit="cover"
+              loading="lazy"
             />
           </div>
           <div className="relative w-[400px] h-[250px] esm:hidden sm:w-[350px] md:w-[400px] lg:w-[400px] xl:w-[400px]">
@@ -140,6 +141,7 @@ export default function Home() {
               className="rounded-lg"
               layout="fill"
               objectFit="cover"
+              loading="lazy"
             />
           </div>
           <div className="relative w-[400px] h-[250px] esm:hidden sm:w-[350px] md:w-[400px] lg:w-[400px] xl:w-[400px]">
@@ -149,6 +151,7 @@ export default function Home() {
               className="rounded-lg"
               layout="fill"
               objectFit="cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -179,6 +182,7 @@ export default function Home() {
                 className="rounded-full"
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
               />
               <Link href="/collection" passHref>
                 <div className="absolute top-60 left-0 mt-6 w-full text-center text-black font-bold underline text-lg">
@@ -194,6 +198,7 @@ export default function Home() {
                 className="rounded-full"
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
               />
               <Link href="/collection" passHref>
                 <div className="absolute top-60 left-0 mt-6 w-full text-center text-black font-bold underline text-lg">
@@ -209,6 +214,7 @@ export default function Home() {
                 className="rounded-full"
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
               />
               <Link href="/collection" passHref>
                 <div className="absolute top-60 left-0 mt-6 w-full text-center text-black font-bold underline text-lg">
@@ -224,6 +230,7 @@ export default function Home() {
                 className="rounded-full"
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
               />
               <Link href="/collection" passHref>
                 <div className="absolute top-60 left-0 mt-6 w-full text-center text-black font-bold underline text-lg">
@@ -241,6 +248,7 @@ export default function Home() {
               alt="home"
               layout="fill"
               objectFit="cover"
+              loading="lazy"
             />
           </div>
           <div className="relative w-[650px] h-[250px] ">
@@ -249,6 +257,7 @@ export default function Home() {
               alt="home"
               layout="fill"
               objectFit="cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -268,6 +277,7 @@ export default function Home() {
                     alt="home"
                     layout="fill"
                     objectFit="cover"
+                    loading="lazy"
                   
                   />
                   <Link href="/category" passHref>
@@ -299,6 +309,7 @@ export default function Home() {
                   layout="fill"
                   objectFit="cover"
                   className="rounded-lg"
+                  loading="lazy"
                 />
               </div>
 
@@ -331,6 +342,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           className="rounded-full transition-transform duration-[1000ms] transform hover:scale-110"
+          loading="lazy"
         />
       </div>
 
