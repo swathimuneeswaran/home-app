@@ -100,10 +100,11 @@ const rooms = [
 export default function Home() {
   return (
     <>
+    <div className="container mx-auto overflow-x-hidden">
       <section id="home">
         {/* Logo Section */}
-        <div className="header flex flex-row  flex-wrap justify-between items-center esm:flex-col">
-          <div className="relative w-[200px] h-[90px] mb-4 ml-40 esm:ml-0 sm:ml-10 md:ml-10 lg:ml-20 esm:w-[150px] sm:w-[250px] md:w-[200px] lg:w-[200px] 2xl:w-[250px]">
+        <div className="header flex flex-row  justify-between items-center esm:flex-col">
+          <div className="relative w-[200px] h-[90px] mb-4 ml-40 esm:ml-0  sm:ml-10 md:ml-10 lg:ml-20 esm:w-[150px] sm:w-[250px] md:w-[200px] lg:w-[200px] 2xl:w-[250px]">
             <Image
               src="/images/logo.png"
               alt="logo"
@@ -234,7 +235,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row flex-wrap justify-center items-center gap-20 mt-40">
-          <div className="relative w-[650px] h-[250px] esm:ml-5">
+          <div className="relative w-[650px] h-[250px] ">
             <Image
               src="/images/post1.jpg"
               alt="home"
@@ -242,7 +243,7 @@ export default function Home() {
               objectFit="cover"
             />
           </div>
-          <div className="relative w-[650px] h-[250px] esm:ml-5">
+          <div className="relative w-[650px] h-[250px] ">
             <Image
               src="/images/post2.jpg"
               alt="home"
@@ -259,14 +260,15 @@ export default function Home() {
             START HERE FOR STYLE:SHOP BY CATEGORY
           </h1>
           <div>
-            <div className="flex flex-row justify-center items-center flex-wrap gap-20 mt-10">
+            <div className="flex flex-row justify-center items-center flex-wrap gap-20 mt-10 ">
               {categories.map((category) => (
-                <div className="relative w-[400px] h-[600px] esm:ml-5" key={category.id}>
+                <div className="relative w-[400px] h-[600px] esm:w-[90%]" key={category.id}>
                   <Image
                     src={category.image}
                     alt="home"
                     layout="fill"
                     objectFit="cover"
+                  
                   />
                   <Link href="/category" passHref>
                     <div className="absolute bottom-5 left-5 mt-6 w-full text-black font-bold underline text-2xl">
@@ -343,6 +345,7 @@ export default function Home() {
 </div>
 
         <hr className="border-t-4 border-pink-700 w-[80%] mx-auto my-20" />
+      </div>
       </div>
     </>
   );
