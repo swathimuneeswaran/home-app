@@ -102,7 +102,7 @@ export default function Home() {
     <>
     <div className="container mx-auto overflow-x-hidden">
       <section id="home">
-        {/* Logo Section */}
+       
         <div className="header flex flex-row  justify-between items-center esm:flex-col">
           <div className="relative w-[200px] h-[90px] mb-4 ml-40 esm:ml-0  sm:ml-10 md:ml-10 lg:ml-20 esm:w-[150px] sm:w-[250px] md:w-[200px] lg:w-[200px] 2xl:w-[250px]">
             <Image
@@ -114,7 +114,7 @@ export default function Home() {
             />
           </div>
 
-          {/* Search Input */}
+         
           <input
             type="search"
             placeholder="Search for Anything"
@@ -122,7 +122,7 @@ export default function Home() {
           />
         </div>
 
-        {/* Main Images Section */}
+        
         <div className="flex flex-row items-center justify-center gap-10 mt-10 esm:flex-col esm:overflow-y-hidden sm:flex-col md:flex-row lg:flex-row xl:flex-row">
           <div className="relative w-[400px] h-[250px] esm:w-[300px] sm:w-[350px] md:w-[400px] lg:w-[400px] xl:w-[400px]">
             <Image
@@ -291,7 +291,7 @@ export default function Home() {
         <div className="flex flex-row justify-center items-center flex-wrap gap-10 mt-10 pb-5">
           {lighting.map((lighting) => (
             <div className="flex flex-col items-center" key={lighting.id}>
-              {/* Image */}
+            
               <div className="relative w-[200px] h-[200px]">
                 <Image
                   src={lighting.image}
@@ -302,7 +302,7 @@ export default function Home() {
                 />
               </div>
 
-              {/* Text Below the Image */}
+          
               <Link href="/category" passHref>
                 <div className="w-[200px] text-center bg-white/70 text-black font-bold underline text-lg py-1 mt-2">
                   {lighting.name}
@@ -323,7 +323,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center items-center mt-10">
   {rooms.map((room) => (
     <div className="flex flex-col items-center" key={room.id}>
-      {/* Image */}
+    
       <div className="relative w-[250px] h-[250px]">
         <Image
           src={room.image}
@@ -334,7 +334,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Text Below the Image */}
+      
       <Link href="/category" passHref>
         <div className="text-black font-bold hover:underline text-xl mt-4 text-center">
           {room.name}
